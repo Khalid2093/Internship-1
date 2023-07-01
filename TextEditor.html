@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Editor</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <style>
+      .header {
+        background-color: #030936;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        height: 75px;
+      }
+      body {
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+      #code {
+        height: 400px;
+        width: 100%;
+      }
+      /* .btn-outline-success {
+        margin-left: 30px;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- <section class="header">
+      <p>sdfsdfdfsd</p>
+    </section> -->
+    <nav class="bg-[#030936]">
+      <div class="flex flex-row justify-between p-2">
+        <!-- Website Logo -->
+        <div class="mx-5 flex flex-row items-center">
+          <a href="./index.html"
+            ><img src="./images/stm image 1.jpg" class="w-14 h-14"
+          /></a>
+          <h1 class="text-white mx-5">INNOSPARKS</h1>
+        </div>
+      </div>
+    </nav>
+    <label for="code" style="font-size: 2rem"
+      ><em>Enter your code here</em></label
+    >
+    <br />
+    <input
+      type="text"
+      id="code"
+      name="code"
+      required=""
+      style="background-color: lightcyan"
+    />
+    <!-- <button class="rounded-none ...">Save Changes</button> -->
+    <!-- <input class="btn btn-primary" type="submit" value="Submit" /> -->
+    <button
+      type="button"
+      class="btn btn-outline-success"
+      style="margin-top: 30px; margin-left: 30px"
+    >
+      Submit
+    </button>
+    <!-- <button type="button" class="btn btn-success">Success</button> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

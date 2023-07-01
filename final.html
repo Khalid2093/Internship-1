@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GENERATE YOUR SUMMARY</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: linear-gradient(to top, #030936,#737fd9 );
+			color: #fff;
+		}
+
+		.container {
+  margin: auto;
+  padding: 20px;
+  max-width: 500px;
+  background-color: #030936;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+		form {
+			display: flex;
+			flex-direction: column;
+		}
+
+		label {
+			margin-bottom: 10px;
+		}
+
+		input[type="number"],
+		input[type="text"],
+		input[type="email"],
+		input[type="file"] {
+			padding: 5px;
+			margin-bottom: 10px;
+			border-radius: 5px;
+			border: none;
+			background-color: #f2f2f2;
+		}
+
+		input[type="submit"],
+		button {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			background-color: #319ef7;
+			color: white;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		button {
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>GENERATE YOUR SUMMARY</h1>
+		<form>
+			<label for="attendees">No. of Attendees:</label>
+			<input type="number" id="attendees" name="attendees"><br>
+
+			<label for="speaker">Name of Speaker:</label>
+			<input type="text" id="speaker" name="speaker"><br>
+
+			<label for="email">Email Address:</label>
+			<input type="email" id="email" name="email"><br>
+
+			<label for="video">Upload Video:</label>
+			<input type="file" id="video" name="video"><br>
+
+			<button type="submit" onclick="redirectToSummary()">
+				Generate Your Summary
+			</button>
+			<script>
+           function redirectToSummary() {
+           window.location.href = "https://ashiqa27-deep-blue-stm64-ffqv4u.streamlit.app/";
+  }
+</script>
+
+		</form>
+	</div>
+ <nav class="bg-[#030936]">
+        <div class="flex flex-row justify-between p-2">
+            <!-- Website Logo -->
+            <div class="mx-5 flex flex-row items-center">
+                <img src="/Users/omsuwarnakar/Downloads/stm image 1.jpg" class=" w-14 h-14">
+                <!--<h1 class="text-white mx-5">gistmaker</h1>-->
+            </div>
+
+            <div class="hidden md:flex flex-row items-center">
+                <!-- NavBar -->
+                <div class="mr-9">
+                    <ul class="flex flex-row space-x-9 text-white">
+                      <!--  <li class="p-2 rounded hover:bg-[#030936] hover:text-black"><a href="/" >Home</a></li>
+                        <!--<li class="p-2 rounded hover:bg-[#319ef7] hover:text-black"><a href="/Appoint">Book an Appointment</a></li>-->
+                       <!-- <li class="p-2 rounded hover:bg-[#030936] hover:text-black"><a href="/Test" >Generate Summary</a></li>
+
+                       <!-- <li class="p-2 rounded hover:bg-[#319ef7] hover:text-black"><a href="" ><form action="/Donate" method="post"><button type="submit">Donate Us</button></form> </a></li>-->
+                    </ul>
+                </div>
+                <!-- Login Button -->
+
+
+                    </div>
+
+
+
+            </div>
+</body>
+</html>
+
